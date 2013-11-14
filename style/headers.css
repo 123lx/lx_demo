@@ -1,0 +1,105 @@
+/* ----------------------------------
+ * HEADERS: default
+ * ---------------------------------- */
+section[role="region"] > header:first-child {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  height: 5rem;  /*此处让header后面有一个高度*/
+  color: #fff;
+  background: url(headers/image/ui/header.png) repeat-x 0 0;
+  background-size: auto 100%;
+  border: none;
+}
+
+section[role="region"] > header:first-child:after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: url(headers/image/ui/shadow.png) repeat-x 0 0;
+  background-size: auto 100%;
+}
+
+section[role="region"] > header:first-child h1 {
+  font: 2.5rem/4.8rem "MozTT", Sans-serif;
+  text-align: left;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: 0 0 0 3rem;
+  height: 100%
+}
+
+section[role="region"] > header:first-child h1 em {
+  font: 400 1.5rem/1em "MozTT", Sans-serif;
+}
+
+
+
+
+
+/* Pressed state */
+section[role="region"] > header:first-child a::-moz-focus-inner,
+section[role="region"] > header:first-child button::-moz-focus-inner,
+section[role="region"] > header:first-child a:active,
+section[role="region"] > header:first-child button:active,
+section[role="region"] > header:first-child a:focus,
+section[role="region"] > header:first-child button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+
+
+/* Navigation links (back, cancel, etc) */
+section[role="region"] > header:first-child > button,
+section[role="region"] > header:first-child > a {
+  position: absolute;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  background: url(headers/image/ui/separator-large.png) no-repeat 2rem center;
+  overflow: hidden;
+}
+
+section[role="region"] > header:first-child > button::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+
+/* ----------------------------------
+ * HEADERS: subheader
+ * ---------------------------------- */
+
+section[role="region"] > header {
+  background: url(headers/image/ui/subheader.png) repeat left bottom;
+  border-bottom: solid 0.1rem #e6e6e6;
+  z-index: 0;
+  padding: 0.4rem 0;
+  height: auto;
+  color: #424242;
+}
+
+section[role="region"] > header:after {
+  display: none;
+}
+
+
+
+/* ----------------------------------
+ * HEADERS: dark
+ * ---------------------------------- */
+section[role="region"].skin-dark > header:first-child,
+.skin-dark section[role="region"] > header:first-child {
+  background: url(headers/image/ui/dark/header.png) repeat-x 0 0;
+    height: auto;  /*此处设置高度*/
+
+}
+
+
