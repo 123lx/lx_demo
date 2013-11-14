@@ -16,3 +16,5 @@ git commit -m "first commit"
 git remote add origin https://github.com/123lx/lx_demo.git 
 
 git push origin master
+
+add lx_demo for test!!!!
