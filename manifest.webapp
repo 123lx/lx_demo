@@ -4,6 +4,7 @@
   "icons": {
     "128": "/style/icons/auto.gif"   
   }, 
+  "Content-Type":"application/x-web-app-manifest+json",
   "orientation": "portrait-primary", 
   "developer": {
     "url": "https://github.com/mozilla-b2g/gaia", 
