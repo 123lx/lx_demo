@@ -1,0 +1,14 @@
+{
+  "description": "Gaia Alcatel Help", 
+  "default_locale": "en-US", 
+  "icons": {
+    "128": "/style/icons/auto.png" 
+  }, 
+  "orientation": "portrait-primary", 
+  "developer": {
+    "url": "https://github.com/mozilla-b2g/gaia", 
+    "name": "The Gaia Team"
+  }, 
+  "launch_path": "/index.html",  
+  "name": "Alcatel Help"
+}
